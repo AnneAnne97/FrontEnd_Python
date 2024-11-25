@@ -1,0 +1,179 @@
+{
+  "Header": {
+    "title": "数据分析bilibili助手",
+    "paragraph": "An data analysis assistant tool for Bilibili,helping creators optimize content strategy and performance and more"
+  },
+  "About": {
+    "paragraph": "数据分析Bilibili助手是一个基于Python，Django和React框架开发的工具，提供获取高频词、弹幕分析和视频下载等功能，旨在帮助用户挖掘更多的数据价值。",
+    "Why": [
+      "Lorem ipsum dolor",
+      "Tempor incididunt",
+      "Lorem ipsum dolor",
+      "Incididunt ut labore"
+    ],
+    "Why2": [
+      "Aliquip ex ea commodo",
+      "Lorem ipsum dolor",
+      "Exercitation ullamco",
+      "Lorem ipsum dolor"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "接口 抓取Bilibili弹幕的函数",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-reply",
+      "name": "接口 抓取Bilibili弹幕的函数",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "接口  下载视频",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-gamepad",
+      "name": "接口  小游戏",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "为什么使用React？",
+      "text": "本项目使用了React进行开发，通过组件化设计提高了开发效率，使代码更易于复用和维护。同时，React的状态管理简化了数据交互和界面更新，虚拟DOM技术减少了不必要的渲染，提升了页面加载速度和响应能力。在页面样式上，使用了CSS3动画和Bootstrap响应式布局。CSS3实现了按钮的动态效果和页面过渡动画，让交互更加生动；Bootstrap保证了页面在不同设备上的良好显示效果，整体设计简单美观，用户体验更加流畅。"
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": " 前端如何与Python后端Django合作",
+      "text": "本项目实现了前后端分离的架构，前端使用React框架处理用户界面，后端则由Django负责数据处理。通过HTTP请求，前后端之间能够高效地交换数据，确保系统具备良好的模块化设计，便于维护和扩展。在数据处理方面，前端通过axios进行异步请求，确保页面能够在不阻塞用户交互的情况下流畅加载数据。后端返回JSON格式的数据，提升了数据传输的效率和兼容性。对于视频路径解析和弹幕分析功能，前端从后端获取视频数据，分析弹幕最多的时间段，并通过图表直观展示分析结果。这样的架构设计使得前后端的职责分离明确，各自专注于自己的领域，提高了开发效率和系统性能。"
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "数据展示：ECharts可视化",
+      "text": "在本项目中，我们使用了 ECharts 作为数据可视化的核心库。ECharts是一款功能强大的开源图表库，可以轻松地生成各种类型的图表。ECharts常被用于展示高频词数据，用户可以通过柱状图、折线图等不同类型的图表进行查看。ECharts支持动态数据更新和图表切换，因此，在本项目中用户可以通过点击不同的按钮来切换不同类型的图表，并即时看到变化的数据展示。每当用户做出选择时，ECharts会自动更新图表展示内容，从而实现实时的数据显示。这种交互方式使得用户能够灵活地选择自己需要的图表类型，并即时看到变化的数据展示，提升了数据可视化的效果。"
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.png",
+      "name": "向宇凡",
+      "job": "主后端"
+    },
+    {
+      "img": "img/team/02.png",
+      "name": "温馨仪",
+      "job": "主前端"
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "获取高频词数据",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-info",
+      "title": "获取弹幕最多时间段",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-download",
+      "title": "下载视频",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-gamepad",
+      "title": "等待小游戏",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
