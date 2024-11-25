@@ -477,6 +477,17 @@ header .intro-text {
 #team .team-img {
   width: 240px;
 }
+
+#flow .flow-img {
+  width: 500px;
+  
+}
+
+#flow .thumbnail {
+  background: transparent;
+  border: 0;
+}
+
 #team .thumbnail {
   background: transparent;
   border: 0;

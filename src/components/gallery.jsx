@@ -1,7 +1,8 @@
 import React,{ useRef, useState } from "react";
 import axios from 'axios';
 import * as echarts from 'echarts' ;
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player';
+import  saveAs from 'file-saver';
 
 
 export const Gallery = (props) => {
@@ -141,6 +142,18 @@ export const Gallery = (props) => {
 
       setContent('VideoData');
       alert(response.data);  
+
+            const fileUrl = 'http://127.0.0.1:8000/download/downloaded_video.mp4'; // Replace with your MP4 file URL
+            // Fetch the video as a Blob (binary large object)
+      fetch(fileUrl)
+      .then((response) => response.blob()) // Get the Blob from the response
+      .then((blob) => {
+        // Use file-saver's saveAs function to save the Blob as a file
+        saveAs(blob, 'downloaded_video.mp4');
+      })
+      .catch((error) => {
+        console.error('Error downloading video:', error);
+      });
     }else{
       alert('视频URL不能为空!')
     }
@@ -150,6 +163,47 @@ export const Gallery = (props) => {
     }
   };
 
+  const handleDownloadExcel = async () => {
+    try {
+      if (videoUrl.trim() !== '') {
+
+        setShowChartButtons(false);
+        const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        const response = await apiClient.post(
+          '/download_excel/',  
+          { url: videoUrl }, 
+          {
+            headers: {
+              'Content-Type': 'application/json',  
+              'X-CSRFToken': csrftoken,           
+            },
+          }
+        );
+  
+        setContent('VideoData');
+        alert(response.data);  
+
+      setShowChartButtons(false);
+      const fileUrl = 'http://127.0.0.1:8000/download/output.xlsx'; // Replace with your MP4 file URL
+            // Fetch the video as a Blob (binary large object)
+      fetch(fileUrl)
+      .then((response) => response.blob()) // Get the Blob from the response
+      .then((blob) => {
+        // Use file-saver's saveAs function to save the Blob as a file
+        saveAs(blob, 'output.xlsx');
+      })
+      .catch((error) => {
+        console.error('Error downloading excel:', error);
+      });
+    }else{
+      alert('视频URL不能为空!')
+    }
+    } catch (error) {
+      setError(error.message);
+      console.error('Error:', error);
+    }
+  };
+  
 
   return (
     <div id="portfolio" className="text-center">
@@ -166,7 +220,8 @@ export const Gallery = (props) => {
           <br></br>
           <button id="fetch-data-btn"  className="btn btn-custom btn-lg page-scroll" onClick={fetchData}>获取高频词数据</button> &nbsp;
           <button id="fetch-max-danmaku-btn"  className="btn btn-custom btn-lg page-scroll" onClick={handleFetchMaxDanmaku} >获取弹幕最多时间段</button> &nbsp;
-          <button id="download-video-btn"  className="btn btn-custom btn-lg page-scroll" onClick={handleDownloadVideo} >下载视频</button>
+          <button id="download-video-btn"  className="btn btn-custom btn-lg page-scroll" onClick={handleDownloadVideo} >下载视频</button> &nbsp;
+          <button id="download-video-btn"  className="btn btn-custom btn-lg page-scroll" onClick={handleDownloadExcel} >下载数据Excel</button> &nbsp;
           <br></br>
           {showChartButtons && (
         <div className="chart-buttons-container">
