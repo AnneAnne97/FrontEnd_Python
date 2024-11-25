@@ -144,11 +144,11 @@ export const Gallery = (props) => {
       alert(response.data);  
 
             const fileUrl = 'http://127.0.0.1:8000/download/downloaded_video.mp4'; // Replace with your MP4 file URL
-            // Fetch the video as a Blob (binary large object)
+         
       fetch(fileUrl)
-      .then((response) => response.blob()) // Get the Blob from the response
+      .then((response) => response.blob()) 
       .then((blob) => {
-        // Use file-saver's saveAs function to save the Blob as a file
+
         saveAs(blob, 'downloaded_video.mp4');
       })
       .catch((error) => {
